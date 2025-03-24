@@ -58,8 +58,8 @@ This is a **Password Manager** application built using **C# WinForms**. The proj
 
 ## 🛠 Installation: Option 2
 ### Steps to Run
-1. **📥 Download the ZIP-File**
-2. **▶️ Unzip & Run the .exe**
+1. **📥 Download the ZIP-File in the publish folder**
+2. **▶️ Unzip & Run the installer**
 
 ## 🚀 Usage
 1. **Set Up a Master Password**
