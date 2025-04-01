@@ -37,6 +37,7 @@ This is a **Password Manager** application built using **C# WinForms**. The proj
 ###### Lightmode
 ![image](https://github.com/user-attachments/assets/26ded667-44f4-48d3-92a9-1d6cbfbdb233)
 ###### Darkmode
+![image](https://github.com/user-attachments/assets/f67882ef-5d3f-4fa4-adce-0e3ed0bcc742)
 
 ### **➕ Add New Item**
 ###### Lightmode
