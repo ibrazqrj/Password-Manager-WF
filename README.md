@@ -16,28 +16,51 @@ This is a **Password Manager** application built using **C# WinForms**. The proj
 ## 📸 Screenshots
 
 ### **🔑 Master Password Registration**
+###### Lightmode
 ![image](https://github.com/user-attachments/assets/5dbae174-7280-48ca-b0c0-9691f0432e85)
+###### Darkmode
+![image](https://github.com/user-attachments/assets/1bc86b2b-89e9-4f73-a9e6-bcc26e15cbb0)
 
 ### **🔐 Login**
+###### Lightmode
 ![image](https://github.com/user-attachments/assets/21b6efdd-d9e4-400a-baab-878a58a3b401)
+###### Darkmode
+![image](https://github.com/user-attachments/assets/564686d0-4e58-4b02-b06e-b714d23c6439)
 
 ### **🏠 Home**
+###### Lightmode
 ![image](https://github.com/user-attachments/assets/ef1723bc-2099-4ca8-a9e4-71c9086a8fea)
+###### Darkmode
+![image](https://github.com/user-attachments/assets/82050fe4-f722-45a6-abd2-f1adabc9ac86)
 
 ### **📋 All Items**
+###### Lightmode
 ![image](https://github.com/user-attachments/assets/26ded667-44f4-48d3-92a9-1d6cbfbdb233)
+###### Darkmode
 
 ### **➕ Add New Item**
+###### Lightmode
 ![image](https://github.com/user-attachments/assets/a8dc9705-380f-4ed6-ab64-1de2ff9a3515)
+###### Darkmode
+![image](https://github.com/user-attachments/assets/8d878059-7f44-453f-9e7a-25439c18c191)
 
 ### **🗑️ Delete Item**
+###### Lightmode
 ![image](https://github.com/user-attachments/assets/0ee47a92-c00e-4048-8351-2cd631f0ceed)
+###### Darkmode
+![image](https://github.com/user-attachments/assets/614dee42-bdac-440a-9437-05ea8f2d7b69)
 
 ### **🔀 Generate Random Password**
+###### Lightmode
 ![image](https://github.com/user-attachments/assets/0f24308a-5196-4efb-a974-9837a4515e83)
+###### Darkmode
+![image](https://github.com/user-attachments/assets/87b9fb11-f25c-4b55-ae55-58d93d349c3c)
 
 ### **🔄 Change Master Password**
+###### Lightmode
 ![image](https://github.com/user-attachments/assets/3341f921-2648-48ba-8642-66492b734954)
+###### Darkmode
+![image](https://github.com/user-attachments/assets/c44624fe-28f4-45ba-b439-4eb50e64d1ae)
 
 ## 🛠 Installation: Option 1
 ### Prerequisites
