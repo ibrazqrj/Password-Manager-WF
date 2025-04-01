@@ -39,11 +39,11 @@
             this.label29 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.passwordServiceBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.label28 = new System.Windows.Forms.Label();
-            this.IdInput = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label27 = new System.Windows.Forms.Label();
-            this.DeleteButton = new System.Windows.Forms.Button();
+            this.tbTitle = new System.Windows.Forms.Label();
+            this.tbIdInput = new System.Windows.Forms.TextBox();
+            this.pnlIdInput = new System.Windows.Forms.Panel();
+            this.tbId = new System.Windows.Forms.Label();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.toastNotificationsManager1 = new DevExpress.XtraBars.ToastNotifications.ToastNotificationsManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.passwordServiceBindingSource)).BeginInit();
@@ -127,64 +127,64 @@
             // 
             this.passwordServiceBindingSource.DataSource = typeof(PasswordManager.Services.PasswordService);
             // 
-            // label28
+            // tbTitle
             // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Roboto Condensed", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.label28.Location = new System.Drawing.Point(385, 459);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(467, 77);
-            this.label28.TabIndex = 58;
-            this.label28.Text = "DELETE AN ITEM";
+            this.tbTitle.AutoSize = true;
+            this.tbTitle.Font = new System.Drawing.Font("Roboto Condensed", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
+            this.tbTitle.Location = new System.Drawing.Point(385, 459);
+            this.tbTitle.Name = "tbTitle";
+            this.tbTitle.Size = new System.Drawing.Size(467, 77);
+            this.tbTitle.TabIndex = 58;
+            this.tbTitle.Text = "DELETE AN ITEM";
             // 
-            // IdInput
+            // tbIdInput
             // 
-            this.IdInput.AccessibleName = "txtIdInput";
-            this.IdInput.BackColor = System.Drawing.Color.White;
-            this.IdInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.IdInput.Font = new System.Drawing.Font("Roboto Condensed", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IdInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.IdInput.Location = new System.Drawing.Point(371, 635);
-            this.IdInput.MaxLength = 25;
-            this.IdInput.Name = "IdInput";
-            this.IdInput.Size = new System.Drawing.Size(497, 45);
-            this.IdInput.TabIndex = 63;
+            this.tbIdInput.AccessibleName = "txtIdInput";
+            this.tbIdInput.BackColor = System.Drawing.Color.White;
+            this.tbIdInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbIdInput.Font = new System.Drawing.Font("Roboto Condensed", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbIdInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
+            this.tbIdInput.Location = new System.Drawing.Point(371, 635);
+            this.tbIdInput.MaxLength = 25;
+            this.tbIdInput.Name = "tbIdInput";
+            this.tbIdInput.Size = new System.Drawing.Size(497, 45);
+            this.tbIdInput.TabIndex = 63;
             // 
-            // panel1
+            // pnlIdInput
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel1.Location = new System.Drawing.Point(371, 688);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(500, 1);
-            this.panel1.TabIndex = 62;
+            this.pnlIdInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
+            this.pnlIdInput.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pnlIdInput.Location = new System.Drawing.Point(371, 688);
+            this.pnlIdInput.Name = "pnlIdInput";
+            this.pnlIdInput.Size = new System.Drawing.Size(500, 1);
+            this.pnlIdInput.TabIndex = 62;
             // 
-            // label27
+            // tbId
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Roboto Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.label27.Location = new System.Drawing.Point(599, 562);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(42, 38);
-            this.label27.TabIndex = 61;
-            this.label27.Text = "Id";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.tbId.AutoSize = true;
+            this.tbId.Font = new System.Drawing.Font("Roboto Condensed", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbId.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
+            this.tbId.Location = new System.Drawing.Point(599, 562);
+            this.tbId.Name = "tbId";
+            this.tbId.Size = new System.Drawing.Size(42, 38);
+            this.tbId.TabIndex = 61;
+            this.tbId.Text = "Id";
+            this.tbId.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // DeleteButton
+            // btnDelete
             // 
-            this.DeleteButton.BackColor = System.Drawing.Color.Red;
-            this.DeleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DeleteButton.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteButton.ForeColor = System.Drawing.Color.White;
-            this.DeleteButton.Location = new System.Drawing.Point(567, 795);
-            this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(101, 32);
-            this.DeleteButton.TabIndex = 64;
-            this.DeleteButton.Text = "DELETE";
-            this.DeleteButton.UseVisualStyleBackColor = false;
-            this.DeleteButton.Click += new System.EventHandler(this.deleteOnClick);
+            this.btnDelete.BackColor = System.Drawing.Color.Red;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Location = new System.Drawing.Point(567, 795);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(101, 32);
+            this.btnDelete.TabIndex = 64;
+            this.btnDelete.Text = "DELETE";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.DeleteOnClick);
             // 
             // toastNotificationsManager1
             // 
@@ -199,11 +199,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.DeleteButton);
-            this.Controls.Add(this.IdInput);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label27);
-            this.Controls.Add(this.label28);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.tbIdInput);
+            this.Controls.Add(this.pnlIdInput);
+            this.Controls.Add(this.tbId);
+            this.Controls.Add(this.tbTitle);
             this.Controls.Add(this.allItems);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.label29);
@@ -229,12 +229,12 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.BindingSource passwordServiceBindingSource;
-        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label tbTitle;
         private System.Windows.Forms.ColumnHeader ID;
-        private System.Windows.Forms.TextBox IdInput;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Button DeleteButton;
+        private System.Windows.Forms.TextBox tbIdInput;
+        private System.Windows.Forms.Panel pnlIdInput;
+        private System.Windows.Forms.Label tbId;
+        private System.Windows.Forms.Button btnDelete;
         private DevExpress.XtraBars.ToastNotifications.ToastNotificationsManager toastNotificationsManager1;
     }
 }

@@ -1,4 +1,5 @@
-﻿using PasswordManager.Helper;
+﻿using Password_Manager_WF.Components;
+using PasswordManager.Helper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,7 +27,7 @@ namespace Password_Manager_WF
         public LoginScreen()
         {
             InitializeComponent();
-            this.MouseDown += new MouseEventHandler(Form_MouseDown); // Event hinzufügen
+            this.MouseDown += new MouseEventHandler(Form_MouseDown);
             _masterPasswordHelper = new MasterPasswordHelper();
         }
 
@@ -75,6 +76,33 @@ namespace Password_Manager_WF
         private void closeOnClick(object sender, EventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void tsTheme_Toggled(object sender, EventArgs e)
+        {
+            Settings.Theme = tsTheme.IsOn ? Theme.Dark : Theme.Light;
+            ApplyConfiguration();
+        }
+
+        private void ApplyConfiguration()
+        {
+            if (Settings.Theme == Theme.Dark)
+            {
+                this.BackColor = Color.FromArgb(40, 41, 45 );
+                this.ForeColor = Color.White;
+            }
+            else if (Settings.Theme == Theme.Light)
+            {
+                this.BackColor = Color.White;
+                this.ForeColor = Color.FromArgb(40, 41, 45);
+            }
+
+            lblTheme.Text = Settings.Theme.ToString().ToUpper();
+
+            foreach (var control in Controls.Cast<Control>())
+            {
+                ThemeManager.ApplyTheme(control);
+            }
         }
     }
 }

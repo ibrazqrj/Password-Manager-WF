@@ -17,6 +17,7 @@ namespace Password_Manager_WF
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Settings.LoadSettings();
             Application.Run(new RegisterScreen());
         }
     }

@@ -12,6 +12,7 @@ using System.IO;
 using PasswordManager.Components;
 using PasswordManager.Model;
 using PasswordManager.Services;
+using Password_Manager_WF.Components;
 
 
 namespace Password_Manager_WF.Controls
@@ -27,6 +28,7 @@ namespace Password_Manager_WF.Controls
             _aesKey = aesKey;
             _passwordService = new PasswordService();
             LoadEntries();
+            ThemeManager.ApplyTheme(this);
         }
 
         private void LoadEntries()
@@ -51,24 +53,25 @@ namespace Password_Manager_WF.Controls
             }
         }
 
-        private void deleteOnClick(object sender, EventArgs e)
+        private void DeleteOnClick(object sender, EventArgs e)
         {
-            if (IdInput.Text == "")
+            if (tbIdInput.Text == "")
             {
                 toastNotificationsManager1.ShowNotification("78696c86-325f-42cc-83e2-1db09312d82c");
                 return;
             }
-            else if (int.Parse(IdInput.Text) > _passwordService.GetNextId() - 1 ||int.Parse(IdInput.Text) < 0)
+            else if (int.Parse(tbIdInput.Text) > _passwordService.GetNextId() - 1 ||int.Parse(tbIdInput.Text) < 0)
             {
                 toastNotificationsManager1.ShowNotification("4c22e3fd-4146-4a1f-84f7-189275a7fbd3");
                 return;
             }
             else
             {
-                int idInput = int.Parse(IdInput.Text);
+                int idInput = int.Parse(tbIdInput.Text);
                 _passwordService.DeletePassword(_aesKey, idInput);
                 toastNotificationsManager1.ShowNotification("df6a9ad8-7ad2-41f1-b8aa-1610c00c13ae");
                 ShowControl(new AllItemsControl(_aesKey));
+                ThemeManager.ApplyTheme(this);
             }
         }
 

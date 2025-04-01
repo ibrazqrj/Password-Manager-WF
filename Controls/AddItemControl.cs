@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PasswordManager.Services;
+using Password_Manager_WF.Components;
 
 namespace Password_Manager_WF.Controls
 {
@@ -21,35 +22,38 @@ namespace Password_Manager_WF.Controls
             InitializeComponent();
             _aesKey = aesKey;
             _passwordService = new PasswordService();
+            ThemeManager.ApplyTheme(this);
         }
 
-        private void addNewItemOnClick(object sender, EventArgs e)
+        private void AddNewItemOnClick(object sender, EventArgs e)
         {
-            if(WebsiteInput.Text == "" || UsernameInput.Text == "" || PasswordInput.Text == "")
+            if(tbWebsite.Text == "" || tbUsername.Text == "" || tbPassword.Text == "")
             {
-                toastNotificationsManager1.ShowNotification("e995d5b6-2454-4240-95ad-0c17cd14f948");
+                toastWindowsNotification.ShowNotification("e995d5b6-2454-4240-95ad-0c17cd14f948");
                 return;
             } else if (GetSelectedCategory() == string.Empty)
             {
-                toastNotificationsManager1.ShowNotification("4fe2dba8-b7e6-4e73-95f7-3d18e9d85bae");
+                toastWindowsNotification.ShowNotification("4fe2dba8-b7e6-4e73-95f7-3d18e9d85bae");
                 return;
             } else
             {
                 int newId = _passwordService.GetNextId();
-                string website = WebsiteInput.Text;
-                string username = UsernameInput.Text;
-                string password = PasswordInput.Text;
+                string website = tbWebsite.Text;
+                string username = tbUsername.Text;
+                string password = tbPassword.Text;
                 string category = GetSelectedCategory();
 
                 _passwordService.AddPassword(newId, website, username, password, category, _aesKey);
-                toastNotificationsManager1.ShowNotification("e32a33ac-9493-4aac-9502-71f3d5d106fc");
+                toastWindowsNotification.ShowNotification("e32a33ac-9493-4aac-9502-71f3d5d106fc");
                 ShowControl(new AllItemsControl(_aesKey));
+                ThemeManager.ApplyTheme(this);
             }
         }
 
         private string GetSelectedCategory()
         {
-            foreach (RadioButton radioButton in CategoryPanel.Controls)
+            var radioButtons = this.Controls.OfType<RadioButton>();
+            foreach (RadioButton radioButton in radioButtons)
             {
                 if (radioButton.Checked)
                 {

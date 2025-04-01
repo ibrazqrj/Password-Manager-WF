@@ -37,13 +37,16 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.toastNotificationsManager1 = new DevExpress.XtraBars.ToastNotifications.ToastNotificationsManager(this.components);
+            this.lblTheme = new System.Windows.Forms.Label();
+            this.tsTheme = new DevExpress.XtraEditors.ToggleSwitch();
+            this.closeIcon = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.closeIcon = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.toastNotificationsManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tsTheme.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.closeIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.closeIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -120,9 +123,45 @@
             new DevExpress.XtraBars.ToastNotifications.ToastNotification("e684be6c-17a2-4546-a57f-84f939ced806", global::Password_Manager_WF.Properties.Resources.success_svgrepo_com, "Login successfull!", "Welcome to the password manager.", "Welcome to the password manager.", DevExpress.XtraBars.ToastNotifications.ToastNotificationTemplate.ImageAndText02),
             new DevExpress.XtraBars.ToastNotifications.ToastNotification("6c225351-02ba-403f-bbf1-9ab0ebddfe1f", global::Password_Manager_WF.Properties.Resources.error_svgrepo_com, "Master Password is wrong!", "Please try again.", "Please try again.", DevExpress.XtraBars.ToastNotifications.ToastNotificationTemplate.ImageAndText02)});
             // 
+            // lblTheme
+            // 
+            this.lblTheme.AutoSize = true;
+            this.lblTheme.BackColor = System.Drawing.Color.White;
+            this.lblTheme.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Bold);
+            this.lblTheme.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
+            this.lblTheme.Location = new System.Drawing.Point(121, 403);
+            this.lblTheme.Name = "lblTheme";
+            this.lblTheme.Size = new System.Drawing.Size(49, 19);
+            this.lblTheme.TabIndex = 32;
+            this.lblTheme.Text = "LIGHT";
+            // 
+            // tsTheme
+            // 
+            this.tsTheme.Location = new System.Drawing.Point(123, 425);
+            this.tsTheme.Name = "tsTheme";
+            this.tsTheme.Properties.OffText = "";
+            this.tsTheme.Properties.OnText = "";
+            this.tsTheme.Properties.ShowText = false;
+            this.tsTheme.Size = new System.Drawing.Size(52, 18);
+            this.tsTheme.TabIndex = 31;
+            this.tsTheme.Toggled += new System.EventHandler(this.tsTheme_Toggled);
+            // 
+            // closeIcon
+            // 
+            this.closeIcon.BackColor = System.Drawing.Color.White;
+            this.closeIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.closeIcon.Image = global::Password_Manager_WF.Properties.Resources.close_square_svgrepo_com__2_;
+            this.closeIcon.Location = new System.Drawing.Point(248, 12);
+            this.closeIcon.Name = "closeIcon";
+            this.closeIcon.Size = new System.Drawing.Size(32, 26);
+            this.closeIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.closeIcon.TabIndex = 30;
+            this.closeIcon.TabStop = false;
+            this.closeIcon.Click += new System.EventHandler(this.closeOnClick);
+            // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Password_Manager_WF.Properties.Resources._679a8ce044245372ca495c4c9c151225;
+            this.pictureBox2.Image = global::Password_Manager_WF.Properties.Resources.loginlogo;
             this.pictureBox2.Location = new System.Drawing.Point(32, 255);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(25, 25);
@@ -140,25 +179,14 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // closeIcon
-            // 
-            this.closeIcon.BackColor = System.Drawing.Color.White;
-            this.closeIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.closeIcon.Image = global::Password_Manager_WF.Properties.Resources.close_square_svgrepo_com__2_;
-            this.closeIcon.Location = new System.Drawing.Point(248, 12);
-            this.closeIcon.Name = "closeIcon";
-            this.closeIcon.Size = new System.Drawing.Size(32, 26);
-            this.closeIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.closeIcon.TabIndex = 30;
-            this.closeIcon.TabStop = false;
-            this.closeIcon.Click += new System.EventHandler(this.closeOnClick);
-            // 
             // LoginScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(292, 447);
+            this.Controls.Add(this.lblTheme);
+            this.Controls.Add(this.tsTheme);
             this.Controls.Add(this.closeIcon);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
@@ -174,9 +202,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Password Manager";
             ((System.ComponentModel.ISupportInitialize)(this.toastNotificationsManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tsTheme.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.closeIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.closeIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,5 +223,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private DevExpress.XtraBars.ToastNotifications.ToastNotificationsManager toastNotificationsManager1;
         private System.Windows.Forms.PictureBox closeIcon;
+        private System.Windows.Forms.Label lblTheme;
+        private DevExpress.XtraEditors.ToggleSwitch tsTheme;
     }
 }

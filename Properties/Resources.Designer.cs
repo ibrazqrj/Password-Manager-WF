@@ -83,6 +83,16 @@ namespace Password_Manager_WF.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_circle_svgrepo_com_white {
+            get {
+                object obj = ResourceManager.GetObject("add-circle-svgrepo-com white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Blue_sky_background_with_clouds_Graphics_27579962_1 {
             get {
                 object obj = ResourceManager.GetObject("Blue-sky-background-with-clouds-Graphics-27579962-1", resourceCulture);
@@ -113,6 +123,26 @@ namespace Password_Manager_WF.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap close_square_svgrepo_com_2_white {
+            get {
+                object obj = ResourceManager.GetObject("close-square-svgrepo-com 2 white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap close_square_svgrepo_com_white {
+            get {
+                object obj = ResourceManager.GetObject("close-square-svgrepo-com white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap coming_soon_banner_design_template_6f68949c1a62d27c9ad37c8993b821d1_screen {
             get {
                 object obj = ResourceManager.GetObject("coming-soon-banner-design-template-6f68949c1a62d27c9ad37c8993b821d1_screen", resourceCulture);
@@ -133,9 +163,29 @@ namespace Password_Manager_WF.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap copy_svgrepo_com_white {
+            get {
+                object obj = ResourceManager.GetObject("copy-svgrepo-com white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap delete_note_svgrepo_com__1_ {
             get {
                 object obj = ResourceManager.GetObject("delete-note-svgrepo-com (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap delete_note_svgrepo_com_white {
+            get {
+                object obj = ResourceManager.GetObject("delete-note-svgrepo-com white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -226,6 +276,16 @@ namespace Password_Manager_WF.Properties {
         internal static System.Drawing.Bitmap login {
             get {
                 object obj = ResourceManager.GetObject("login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap loginlogo {
+            get {
+                object obj = ResourceManager.GetObject("loginlogo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

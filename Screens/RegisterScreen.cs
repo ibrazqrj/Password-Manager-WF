@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using PasswordManager.Components;
 using Password_Manager_WF.Controls;
 using System.Runtime.InteropServices;
+using Password_Manager_WF.Components;
 
 namespace Password_Manager_WF
 {
@@ -89,6 +90,33 @@ namespace Password_Manager_WF
         private void closeOnClick(object sender, EventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void tsTheme_Toggled(object sender, EventArgs e)
+        {
+            Settings.Theme = tsTheme.IsOn ? Theme.Dark : Theme.Light;
+            ApplyConfiguration();
+        }
+
+        private void ApplyConfiguration()
+        {
+            if (Settings.Theme == Theme.Dark)
+            {
+                this.BackColor = Color.FromArgb(40, 41, 45);
+                this.ForeColor = Color.White;
+            }
+            else if (Settings.Theme == Theme.Light)
+            {
+                this.BackColor = Color.White;
+                this.ForeColor = Color.FromArgb(40, 41, 45);
+            }
+
+            lblTheme.Text = Settings.Theme.ToString().ToUpper();
+
+            foreach (var control in Controls.Cast<Control>())
+            {
+                ThemeManager.ApplyTheme(control);
+            }
         }
     }
 }

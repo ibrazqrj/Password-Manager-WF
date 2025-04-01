@@ -30,185 +30,212 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenuScreen));
-            this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.buttonHome = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
+            this.flpSidebar = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnlAvatar = new System.Windows.Forms.Panel();
+            this.pbAvatar = new System.Windows.Forms.PictureBox();
+            this.pnlHome = new System.Windows.Forms.Panel();
+            this.btnHome = new System.Windows.Forms.Button();
+            this.pnlAllItems = new System.Windows.Forms.Panel();
+            this.btnAllItems = new System.Windows.Forms.Button();
+            this.pnlGenerator = new System.Windows.Forms.Panel();
+            this.btnGenerator = new System.Windows.Forms.Button();
+            this.pnlMasterPassword = new System.Windows.Forms.Panel();
+            this.btnMasterPassword = new System.Windows.Forms.Button();
+            this.pnlThemeSwitch = new System.Windows.Forms.Panel();
+            this.lblTheme = new System.Windows.Forms.Label();
+            this.tsTheme = new DevExpress.XtraEditors.ToggleSwitch();
+            this.tmrSidebar = new System.Windows.Forms.Timer(this.components);
             this.contentPanel = new System.Windows.Forms.Panel();
-            this.closeIcon = new System.Windows.Forms.PictureBox();
-            this.sidebar.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.closeIcon)).BeginInit();
+            this.icnClose = new System.Windows.Forms.PictureBox();
+            this.flpSidebar.SuspendLayout();
+            this.pnlAvatar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).BeginInit();
+            this.pnlHome.SuspendLayout();
+            this.pnlAllItems.SuspendLayout();
+            this.pnlGenerator.SuspendLayout();
+            this.pnlMasterPassword.SuspendLayout();
+            this.pnlThemeSwitch.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tsTheme.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icnClose)).BeginInit();
             this.SuspendLayout();
             // 
-            // sidebar
+            // flpSidebar
             // 
-            this.sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.sidebar.Controls.Add(this.panel2);
-            this.sidebar.Controls.Add(this.panel3);
-            this.sidebar.Controls.Add(this.panel4);
-            this.sidebar.Controls.Add(this.panel5);
-            this.sidebar.Controls.Add(this.panel6);
-            this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.sidebar.Location = new System.Drawing.Point(0, 0);
-            this.sidebar.MaximumSize = new System.Drawing.Size(382, 900);
-            this.sidebar.MinimumSize = new System.Drawing.Size(80, 900);
-            this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(382, 900);
-            this.sidebar.TabIndex = 6;
+            this.flpSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
+            this.flpSidebar.Controls.Add(this.pnlAvatar);
+            this.flpSidebar.Controls.Add(this.pnlHome);
+            this.flpSidebar.Controls.Add(this.pnlAllItems);
+            this.flpSidebar.Controls.Add(this.pnlGenerator);
+            this.flpSidebar.Controls.Add(this.pnlMasterPassword);
+            this.flpSidebar.Controls.Add(this.pnlThemeSwitch);
+            this.flpSidebar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.flpSidebar.Location = new System.Drawing.Point(0, 0);
+            this.flpSidebar.MaximumSize = new System.Drawing.Size(382, 900);
+            this.flpSidebar.MinimumSize = new System.Drawing.Size(80, 900);
+            this.flpSidebar.Name = "flpSidebar";
+            this.flpSidebar.Size = new System.Drawing.Size(382, 900);
+            this.flpSidebar.TabIndex = 6;
             // 
-            // panel2
+            // pnlAvatar
             // 
-            this.panel2.Controls.Add(this.panel1);
-            this.panel2.Controls.Add(this.pictureBox6);
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(379, 178);
-            this.panel2.TabIndex = 0;
+            this.pnlAvatar.Controls.Add(this.pbAvatar);
+            this.pnlAvatar.Location = new System.Drawing.Point(3, 3);
+            this.pnlAvatar.Name = "pnlAvatar";
+            this.pnlAvatar.Size = new System.Drawing.Size(379, 178);
+            this.pnlAvatar.TabIndex = 0;
             // 
-            // panel1
+            // pbAvatar
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(9, 156);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(362, 1);
-            this.panel1.TabIndex = 0;
+            this.pbAvatar.Image = global::Password_Manager_WF.Properties.Resources.pngegg;
+            this.pbAvatar.Location = new System.Drawing.Point(129, 34);
+            this.pbAvatar.Name = "pbAvatar";
+            this.pbAvatar.Size = new System.Drawing.Size(116, 96);
+            this.pbAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAvatar.TabIndex = 30;
+            this.pbAvatar.TabStop = false;
             // 
-            // pictureBox6
+            // pnlHome
             // 
-            this.pictureBox6.Image = global::Password_Manager_WF.Properties.Resources.pngegg;
-            this.pictureBox6.Location = new System.Drawing.Point(129, 34);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(116, 96);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 30;
-            this.pictureBox6.TabStop = false;
+            this.pnlHome.Controls.Add(this.btnHome);
+            this.pnlHome.Location = new System.Drawing.Point(3, 187);
+            this.pnlHome.Name = "pnlHome";
+            this.pnlHome.Size = new System.Drawing.Size(379, 62);
+            this.pnlHome.TabIndex = 8;
             // 
-            // panel3
+            // btnHome
             // 
-            this.panel3.Controls.Add(this.buttonHome);
-            this.panel3.Location = new System.Drawing.Point(3, 187);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(379, 62);
-            this.panel3.TabIndex = 8;
+            this.btnHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
+            this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHome.Font = new System.Drawing.Font("Roboto Condensed", 24F, System.Drawing.FontStyle.Bold);
+            this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.Image = global::Password_Manager_WF.Properties.Resources.home_svgrepo_com__2_;
+            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Location = new System.Drawing.Point(-9, -13);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnHome.Size = new System.Drawing.Size(419, 86);
+            this.btnHome.TabIndex = 7;
+            this.btnHome.Text = "     HOME";
+            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.HomeButtonClick);
             // 
-            // buttonHome
+            // pnlAllItems
             // 
-            this.buttonHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.buttonHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.buttonHome.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonHome.Font = new System.Drawing.Font("Roboto Condensed", 24F, System.Drawing.FontStyle.Bold);
-            this.buttonHome.ForeColor = System.Drawing.Color.White;
-            this.buttonHome.Image = global::Password_Manager_WF.Properties.Resources.home_svgrepo_com__2_;
-            this.buttonHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonHome.Location = new System.Drawing.Point(-9, -13);
-            this.buttonHome.Name = "buttonHome";
-            this.buttonHome.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.buttonHome.Size = new System.Drawing.Size(419, 86);
-            this.buttonHome.TabIndex = 7;
-            this.buttonHome.Text = "     HOME";
-            this.buttonHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonHome.UseVisualStyleBackColor = false;
-            this.buttonHome.Click += new System.EventHandler(this.homeButtonClick);
+            this.pnlAllItems.Controls.Add(this.btnAllItems);
+            this.pnlAllItems.Location = new System.Drawing.Point(3, 255);
+            this.pnlAllItems.Name = "pnlAllItems";
+            this.pnlAllItems.Size = new System.Drawing.Size(379, 62);
+            this.pnlAllItems.TabIndex = 9;
             // 
-            // panel4
+            // btnAllItems
             // 
-            this.panel4.Controls.Add(this.button2);
-            this.panel4.Location = new System.Drawing.Point(3, 255);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(379, 62);
-            this.panel4.TabIndex = 9;
+            this.btnAllItems.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
+            this.btnAllItems.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnAllItems.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAllItems.Font = new System.Drawing.Font("Roboto Condensed", 24F, System.Drawing.FontStyle.Bold);
+            this.btnAllItems.ForeColor = System.Drawing.Color.White;
+            this.btnAllItems.Image = global::Password_Manager_WF.Properties.Resources.password_minimalistic_input_svgrepo_com__1_;
+            this.btnAllItems.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAllItems.Location = new System.Drawing.Point(-9, -13);
+            this.btnAllItems.Name = "btnAllItems";
+            this.btnAllItems.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnAllItems.Size = new System.Drawing.Size(419, 86);
+            this.btnAllItems.TabIndex = 7;
+            this.btnAllItems.Text = "     ALL ITEMS";
+            this.btnAllItems.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAllItems.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAllItems.UseVisualStyleBackColor = false;
+            this.btnAllItems.Click += new System.EventHandler(this.AllItemsButtonClick);
             // 
-            // button2
+            // pnlGenerator
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("Roboto Condensed", 24F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::Password_Manager_WF.Properties.Resources.password_minimalistic_input_svgrepo_com__1_;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(-9, -13);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(419, 86);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "     ALL ITEMS";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.allItemsButtonClick);
+            this.pnlGenerator.Controls.Add(this.btnGenerator);
+            this.pnlGenerator.Location = new System.Drawing.Point(3, 323);
+            this.pnlGenerator.Name = "pnlGenerator";
+            this.pnlGenerator.Size = new System.Drawing.Size(379, 62);
+            this.pnlGenerator.TabIndex = 10;
             // 
-            // panel5
+            // btnGenerator
             // 
-            this.panel5.Controls.Add(this.button3);
-            this.panel5.Location = new System.Drawing.Point(3, 323);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(379, 62);
-            this.panel5.TabIndex = 10;
+            this.btnGenerator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
+            this.btnGenerator.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnGenerator.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGenerator.Font = new System.Drawing.Font("Roboto Condensed", 24F, System.Drawing.FontStyle.Bold);
+            this.btnGenerator.ForeColor = System.Drawing.Color.White;
+            this.btnGenerator.Image = global::Password_Manager_WF.Properties.Resources.test_tube_minimalistic_svgrepo_com__1_;
+            this.btnGenerator.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenerator.Location = new System.Drawing.Point(-9, -13);
+            this.btnGenerator.Name = "btnGenerator";
+            this.btnGenerator.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnGenerator.Size = new System.Drawing.Size(419, 86);
+            this.btnGenerator.TabIndex = 7;
+            this.btnGenerator.Text = "     GENERATOR";
+            this.btnGenerator.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGenerator.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGenerator.UseVisualStyleBackColor = false;
+            this.btnGenerator.Click += new System.EventHandler(this.GeneratorButtonClick);
             // 
-            // button3
+            // pnlMasterPassword
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Font = new System.Drawing.Font("Roboto Condensed", 24F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = global::Password_Manager_WF.Properties.Resources.test_tube_minimalistic_svgrepo_com__1_;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(-9, -13);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(419, 86);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "     GENERATOR";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.generatorButtonClick);
+            this.pnlMasterPassword.Controls.Add(this.btnMasterPassword);
+            this.pnlMasterPassword.Location = new System.Drawing.Point(3, 391);
+            this.pnlMasterPassword.Name = "pnlMasterPassword";
+            this.pnlMasterPassword.Size = new System.Drawing.Size(379, 62);
+            this.pnlMasterPassword.TabIndex = 11;
             // 
-            // panel6
+            // btnMasterPassword
             // 
-            this.panel6.Controls.Add(this.button4);
-            this.panel6.Location = new System.Drawing.Point(3, 391);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(379, 62);
-            this.panel6.TabIndex = 11;
+            this.btnMasterPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
+            this.btnMasterPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnMasterPassword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMasterPassword.Font = new System.Drawing.Font("Roboto Condensed", 24F, System.Drawing.FontStyle.Bold);
+            this.btnMasterPassword.ForeColor = System.Drawing.Color.White;
+            this.btnMasterPassword.Image = global::Password_Manager_WF.Properties.Resources.key_minimalistic_square_3_svgrepo_com__1_;
+            this.btnMasterPassword.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMasterPassword.Location = new System.Drawing.Point(-9, -13);
+            this.btnMasterPassword.Name = "btnMasterPassword";
+            this.btnMasterPassword.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnMasterPassword.Size = new System.Drawing.Size(419, 86);
+            this.btnMasterPassword.TabIndex = 7;
+            this.btnMasterPassword.Text = "     MASTERPASSWORD";
+            this.btnMasterPassword.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMasterPassword.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMasterPassword.UseVisualStyleBackColor = false;
+            this.btnMasterPassword.Click += new System.EventHandler(this.MasterpasswordButtonClick);
             // 
-            // button4
+            // pnlThemeSwitch
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Font = new System.Drawing.Font("Roboto Condensed", 24F, System.Drawing.FontStyle.Bold);
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = global::Password_Manager_WF.Properties.Resources.key_minimalistic_square_3_svgrepo_com__1_;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(-9, -13);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(419, 86);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "     MASTERPASSWORD";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.masterpasswordButtonClick);
+            this.pnlThemeSwitch.Controls.Add(this.lblTheme);
+            this.pnlThemeSwitch.Controls.Add(this.tsTheme);
+            this.pnlThemeSwitch.Location = new System.Drawing.Point(3, 459);
+            this.pnlThemeSwitch.Name = "pnlThemeSwitch";
+            this.pnlThemeSwitch.Size = new System.Drawing.Size(379, 441);
+            this.pnlThemeSwitch.TabIndex = 14;
+            // 
+            // lblTheme
+            // 
+            this.lblTheme.AutoSize = true;
+            this.lblTheme.Font = new System.Drawing.Font("Roboto Condensed", 12F, System.Drawing.FontStyle.Bold);
+            this.lblTheme.ForeColor = System.Drawing.Color.White;
+            this.lblTheme.Location = new System.Drawing.Point(167, 388);
+            this.lblTheme.Name = "lblTheme";
+            this.lblTheme.Size = new System.Drawing.Size(56, 19);
+            this.lblTheme.TabIndex = 13;
+            this.lblTheme.Text = "THEME";
+            // 
+            // tsTheme
+            // 
+            this.tsTheme.Location = new System.Drawing.Point(169, 410);
+            this.tsTheme.Name = "tsTheme";
+            this.tsTheme.Properties.OffText = "";
+            this.tsTheme.Properties.OnText = "";
+            this.tsTheme.Properties.ShowText = false;
+            this.tsTheme.Size = new System.Drawing.Size(52, 18);
+            this.tsTheme.TabIndex = 12;
+            this.tsTheme.Toggled += new System.EventHandler(this.ThemeSwitch_Toggled);
             // 
             // contentPanel
             // 
@@ -219,58 +246,63 @@
             this.contentPanel.Size = new System.Drawing.Size(1218, 900);
             this.contentPanel.TabIndex = 23;
             // 
-            // closeIcon
+            // icnClose
             // 
-            this.closeIcon.BackColor = System.Drawing.Color.White;
-            this.closeIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.closeIcon.Image = global::Password_Manager_WF.Properties.Resources.close_square_svgrepo_com__2_;
-            this.closeIcon.Location = new System.Drawing.Point(1540, 8);
-            this.closeIcon.Name = "closeIcon";
-            this.closeIcon.Size = new System.Drawing.Size(51, 53);
-            this.closeIcon.TabIndex = 29;
-            this.closeIcon.TabStop = false;
-            this.closeIcon.Click += new System.EventHandler(this.closeClick);
+            this.icnClose.BackColor = System.Drawing.Color.White;
+            this.icnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.icnClose.Image = global::Password_Manager_WF.Properties.Resources.close_square_svgrepo_com__2_;
+            this.icnClose.Location = new System.Drawing.Point(1540, 8);
+            this.icnClose.Name = "icnClose";
+            this.icnClose.Size = new System.Drawing.Size(51, 53);
+            this.icnClose.TabIndex = 29;
+            this.icnClose.TabStop = false;
+            this.icnClose.Click += new System.EventHandler(this.CloseClick);
             // 
             // MainMenuScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1600, 900);
-            this.Controls.Add(this.closeIcon);
+            this.Controls.Add(this.icnClose);
             this.Controls.Add(this.contentPanel);
-            this.Controls.Add(this.sidebar);
+            this.Controls.Add(this.flpSidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainMenuScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Password Manager";
-            this.sidebar.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.closeIcon)).EndInit();
+            this.flpSidebar.ResumeLayout(false);
+            this.pnlAvatar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).EndInit();
+            this.pnlHome.ResumeLayout(false);
+            this.pnlAllItems.ResumeLayout(false);
+            this.pnlGenerator.ResumeLayout(false);
+            this.pnlMasterPassword.ResumeLayout(false);
+            this.pnlThemeSwitch.ResumeLayout(false);
+            this.pnlThemeSwitch.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tsTheme.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.icnClose)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.FlowLayoutPanel sidebar;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button buttonHome;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Timer sidebarTimer;
+        private System.Windows.Forms.FlowLayoutPanel flpSidebar;
+        private System.Windows.Forms.Panel pnlAvatar;
+        private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.Panel pnlHome;
+        private System.Windows.Forms.Panel pnlAllItems;
+        private System.Windows.Forms.Button btnAllItems;
+        private System.Windows.Forms.Panel pnlGenerator;
+        private System.Windows.Forms.Button btnGenerator;
+        private System.Windows.Forms.Panel pnlMasterPassword;
+        private System.Windows.Forms.Button btnMasterPassword;
+        private System.Windows.Forms.Timer tmrSidebar;
         private System.Windows.Forms.Panel contentPanel;
-        private System.Windows.Forms.PictureBox closeIcon;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox icnClose;
+        private System.Windows.Forms.PictureBox pbAvatar;
+        private DevExpress.XtraEditors.ToggleSwitch tsTheme;
+        private System.Windows.Forms.Label lblTheme;
+        private System.Windows.Forms.Panel pnlThemeSwitch;
     }
 }

@@ -37,7 +37,7 @@ namespace Password_Manager_WF.Controls
 
         private void ActualizeView(List<PasswordEntry> passwordList)
         {
-            allItems.Items.Clear();
+            lvItems.Items.Clear();
             originalItems.Clear();
 
             foreach (var entry in passwordList)
@@ -47,7 +47,7 @@ namespace Password_Manager_WF.Controls
                 item.SubItems.Add(entry.EncryptedPassword);
                 item.SubItems.Add(entry.Category); 
 
-                allItems.Items.Add(item);
+                lvItems.Items.Add(item);
                 originalItems.Add((ListViewItem)item.Clone());
             }
         }
@@ -66,11 +66,11 @@ namespace Password_Manager_WF.Controls
 
         private void CopySelectedItems()
         {
-            if (allItems.SelectedItems.Count > 0)
+            if (lvItems.SelectedItems.Count > 0)
             {
                 StringBuilder sb = new StringBuilder();
 
-                foreach (ListViewItem item in allItems.SelectedItems)
+                foreach (ListViewItem item in lvItems.SelectedItems)
                 {
                     for (int i = 0; i < item.SubItems.Count; i++)
                     {
@@ -93,26 +93,26 @@ namespace Password_Manager_WF.Controls
 
             contextMenu.Items.Add(copyItem);
 
-            allItems.ContextMenuStrip = contextMenu;
+            lvItems.ContextMenuStrip = contextMenu;
         }
 
-        private void deleteItemOnClick(object sender, EventArgs e)
+        private void DeleteItemOnClick(object sender, EventArgs e)
         {
             ShowControl(new DeleteItemControl(_aesKey));
         }
 
         private void FormLoad(object sender, EventArgs e)
         {
-            foreach (ListViewItem item in allItems.Items)
+            foreach (ListViewItem item in lvItems.Items)
             {
                 originalItems.Add((ListViewItem)item.Clone());
             }
         }
 
-        private void searchOnClick(object sender, EventArgs e)
+        private void SearchOnClick(object sender, EventArgs e)
         {
-            string searchText = searchBar.Text.ToLower();
-            allItems.Items.Clear();
+            string searchText = tbSearchbar.Text.ToLower();
+            lvItems.Items.Clear();
 
             foreach (var item in originalItems)
             {
@@ -129,7 +129,7 @@ namespace Password_Manager_WF.Controls
 
                 if (match)
                 {
-                    allItems.Items.Add((ListViewItem)item.Clone());
+                    lvItems.Items.Add((ListViewItem)item.Clone());
                 }
             }
         }
